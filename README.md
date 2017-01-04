@@ -50,7 +50,7 @@ To submit, open a [pull request](https://help.github.com/articles/about-pull-req
 
 Pull requests should use the following title format
 ```
-[Language] Challenge [#]
+[Language] Challenge [#] 
 ```
 Example:
 ```
