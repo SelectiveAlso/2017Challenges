@@ -5,7 +5,7 @@ Hello and welcome to the Year of Programming 2017's challenges repository! Here
 we will be posting ~~daily~~ periodic challenges for the community to complete.
 
 ## Table of Contents
-    
+
 1. [The administration team](#the-administration-team)
 2. [Challenges](#challenges)
 3. [Solutions](#solutions)
@@ -48,7 +48,17 @@ compare work!
 
 To submit, open a [pull request](https://help.github.com/articles/about-pull-requests/) on the main repository. We'll make sure that merging won't cause any problems, and go from there.
 
-Note: Your solution will not be instantly accepted onto repository. We will be reviewing your code, file formatting and directory structure of your code. If you satisfy the requirements, then we will accept and merge. 
+Pull requests should use the following title format
+```
+[Language] Challenge [#]
+```
+Example:
+```
+[Go] Challenge 14
+```
+Any details you wish to share can be put in the PR description/comments.
+
+Note: Your solution will not be instantly accepted onto repository. We will be reviewing your code, file formatting and directory structure of your code. If you satisfy the requirements, then we will accept and merge.
 
 ## Getting Set Up
 
@@ -105,7 +115,7 @@ Checking connectivity... done.
 #### 4. Git Configuration
 
 
-Next we will be [configuring](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup) your git setup. 
+Next we will be [configuring](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup) your git setup.
 
 
 Note: Simply replace the text inside the quotation marks with your name and email.
@@ -130,8 +140,8 @@ README.md                             -> Contains the information in this help p
 challenge_0/                          -> challenge_<number>
 
             README.md                 -> File containing challenge prompt
-            r/                        -> lowercase directory with your preferred language. 
-            php/                      -> If it does not exist, then create one. 
+            r/                        -> lowercase directory with your preferred language.
+            php/                      -> If it does not exist, then create one.
             python/
             cpp/
             csharp/
@@ -140,11 +150,11 @@ challenge_0/                          -> challenge_<number>
                     /nick
                     /nancy
                     .../
-                    
+
                            README.md  -> Documentation for your program. Be creative!
                            src/       -> contains your source code
 ```
-  
+
 Assuming that you are in the root of the directory you will look for the challenge you want to complete.
 
 `/challenge_#/`
@@ -189,7 +199,7 @@ $ git push origin master
 
 Note: Replace the text inside the quotations with the relevant information.
 
-If you go to the page where your forked repository is contained your updated code should be there. 
+If you go to the page where your forked repository is contained your updated code should be there.
 
 Click on the "New pull request" button button to submit your work for review. Be sure to include the challenge number and language of your solution!
 
