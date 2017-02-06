@@ -1,26 +1,27 @@
 class Node
+  protected
+  attr_writer :prev, :next
 
-  attr_reader :data, :id
-  attr_accessor :next
+  public
+  attr_reader :value, :prev, :next, :data, :id
 
-  def initialize(next_node = nil)
-    @id = ('a'..'z').to_a.shuffle[0,12].join
-    # @data = data
-    @next = next_node
+  def initialize()
+    @id = ('a'..'z').to_a.shuffle[0,3].join
+    @data = ('a'..'z').to_a.shuffle[0,10].join
   end
 
-end
-
-class Head
-
-  attr_accessor :current
-
-  def initialize(current = nil)
-    @current = current
+  def remove
+    @prev.next = @next if @prev
+    @next.prev = @prev if @next
+    @next = @prev = nil
   end
 
-  def next
-    @current = current.next
-  end
+  def insert_after(node)
+    remove
 
+    @next = node.next
+    @next.prev = self if @next
+    @prev = node
+    node.next = self
+  end
 end

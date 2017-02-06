@@ -1,8 +1,9 @@
 require './node.rb'
 nodes = []
 
-10.times do
-  nodes.push(Node.new)
-end
+nodes.push(Node.new)
+head = nodes[0]
 
-puts nodes.inspect
+9.times do
+  nodes.push(Node.new.insert_after(head))
+end
